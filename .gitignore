@@ -1,0 +1,24 @@
+import math
+
+def calcular_area(raio):
+    area = math.pi * raio ** 2
+    return area
+
+if __name__ == "__main__":
+    raio = float(input("Digite o raio do círculo: "))
+    area = calcular_area(raio)
+    print(f"A área do círculo com raio {raio} é {area:.2f}")
+# Iniciar um repositório Git
+git init
+
+# Adicionar o arquivo ao repositório
+git add calcular_area_circulo.py
+
+# Fazer o commit inicial
+git commit -m "Adicionado script para calcular área de um círculo"
+# Adicionar o repositório remoto do GitHub
+git remote add origin https://github.com/seu-usuario/projeto-area-circulo.git
+
+# Enviar o commit inicial para o GitHub
+git push -u origin master
+
